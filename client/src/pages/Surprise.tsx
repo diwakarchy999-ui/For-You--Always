@@ -11,7 +11,7 @@ export default function Surprise() {
   const handleOpen = () => {
     if (isOpen) return;
     setIsOpen(true);
-    
+
     // Enhanced confetti celebration
     const duration = 4000;
     const end = Date.now() + duration;
@@ -28,7 +28,7 @@ export default function Surprise() {
         shapes: ['circle', 'square'],
         scalar: 1.2,
       });
-      
+
       // Right side confetti
       confetti({
         particleCount: 7,
@@ -39,7 +39,7 @@ export default function Surprise() {
         shapes: ['circle', 'square'],
         scalar: 1.2,
       });
-      
+
       // Center burst
       confetti({
         particleCount: 3,
@@ -57,8 +57,8 @@ export default function Surprise() {
     })();
   };
 
-  const surpriseText = "You are the best gift I could ever ask for. Get ready for a special dinner tonight!";
-  const text = "Or replace this with your actual surprise coupon/message";
+  const surpriseText = "Timi Bina Adhuro Lagcha Yo Sansar, Timi Nai Ho Mero Khusi Ko Aadhar, Man Le Rojeko Naam Timi  !!!";
+  const text = "Do You Accept My Purposal....  ?";
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden bg-gradient-to-br from-rose-50 via-pink-50 to-purple-50">
@@ -195,7 +195,7 @@ export default function Surprise() {
 
                   {/* Envelope Body */}
                   <div className="absolute inset-0 bg-gradient-to-br from-pink-100 to-rose-100" />
-                  
+
                   {/* Bottom decorative triangle */}
                   <div
                     className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-pink-200/50 to-transparent"
@@ -222,7 +222,7 @@ export default function Surprise() {
                         transition={{ duration: 2, repeat: Infinity }}
                         className="absolute inset-2 bg-white/20 rounded-full"
                       />
-                      
+
                       <Heart className="w-8 h-8 md:w-10 md:h-10 text-white fill-white relative z-10" />
 
                       {/* Sparkles around seal */}
@@ -348,7 +348,7 @@ export default function Surprise() {
                   className="p-6 bg-gradient-to-br from-pink-100 to-rose-100 rounded-full shadow-lg relative"
                 >
                   <Gift className="w-14 h-14 md:w-16 md:h-16 text-rose-500" />
-                  
+
                   {/* Sparkles around gift */}
                   {[...Array(4)].map((_, i) => (
                     <motion.div

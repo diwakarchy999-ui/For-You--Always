@@ -20,6 +20,6 @@
       "@shared/*": ["client/src/shared/*"]
     },
     "resolveJsonModule": true,
-    "esModuleInterop": true
+    
   }
 }

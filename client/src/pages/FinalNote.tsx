@@ -67,22 +67,22 @@ export default function FinalNote() {
     window.scrollTo({ top: 0, behavior: "instant" });
   }, []);
 
-  const fullText = "Loving you is not something I do—it's who I am. In every breath, every silence, every tomorrow, it's you. Happy Valentine's Day to the one my heart chose long before I ever understood love.";
+  const fullText = "You’re my love, my life, the air that I breathe. You’re my soul, my happiness, the all that I need. You’re my light, my dark, the stars in the sky. You’re my ups, my downs, the reason I try. You’re my strength, my weakness, the love form the start. You’re my heartache, my pain, the beat of my heart. You’re my tears, my joy, in the love that you bring. You’re my world, my galaxy,You’re my everything.";
 
   // Optimized typing effect
   useEffect(() => {
     if (isLoading) return;
-    
+
     let index = 0;
     const typingSpeed = 35; // Slightly faster for better UX
-    
+
     const timer = setInterval(() => {
       if (index >= fullText.length) {
         clearInterval(timer);
         setIsTypingComplete(true);
         return;
       }
-      
+
       setDisplayedText(fullText.slice(0, index + 1));
       index++;
     }, typingSpeed);
@@ -154,7 +154,7 @@ export default function FinalNote() {
               </motion.div>
 
               <h1 className="font-handwriting text-2xl sm:text-3xl md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-amber-700 via-rose-600 to-pink-600">
-                My Dearest {name || "Love"}
+                My {name || "Love"}
               </h1>
 
               <div className="flex items-center justify-center gap-2">
@@ -211,7 +211,8 @@ export default function FinalNote() {
               </div>
 
               <p className="font-handwriting text-xl sm:text-2xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-rose-600 to-pink-600">
-                Forever Yours
+                Forever Your
+                Diwakar ....
               </p>
 
               <motion.div
@@ -223,7 +224,7 @@ export default function FinalNote() {
               >
                 <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-pink-400/60" />
                 <span className="font-serif text-xs sm:text-sm text-gray-500 italic">
-                  Valentine's Day {new Date().getFullYear()}
+                  Purpose Day {new Date().getFullYear()}
                 </span>
               </motion.div>
             </motion.div>
@@ -262,11 +263,11 @@ export default function FinalNote() {
             transition={{ duration: 2.5, repeat: Infinity }}
             className="font-handwriting text-base sm:text-lg md:text-xl text-pink-600"
           >
-            Happy Valentine's Day ♡
+            Happy Purpose Day ♡
           </motion.p>
-          
+
           <p className="text-xs sm:text-sm text-gray-500 italic">
-            Made with love, just for you
+            Made with love, just for you  !!!
           </p>
         </motion.div>
       </div>

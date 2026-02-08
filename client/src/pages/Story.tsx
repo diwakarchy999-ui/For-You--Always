@@ -4,7 +4,7 @@ import { Link } from "wouter";
 import { cn } from "@/lib/utils";
 import { MusicPlayer } from "@/components/MusicPlayer";
 import { Heart, Sparkles, ArrowRight } from "lucide-react";
-
+import ReactPlayer from 'react-player';
 // Memoized decorative sparkle component
 const DecorativeSparkle = memo(({ delay, left, top }: { delay: number; left: string; top: string }) => (
   <motion.div
@@ -219,24 +219,38 @@ export default function Story() {
   const sortedStory = [
     {
       id: 1,
-      title: "The First Glance",
-      content: "From the moment our eyes met, I knew there was something extraordinary about you. Time seemed to stand still, and in that instant, everything changed.",
-      imageUrl: "https://images.unsplash.com/photo-1627964464837-6328f5931576?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y291cGxlc3xlbnwwfHwwfHx8MA%3D%3D",
+      title: "Your Simplisity..",
+      content: "When I think something beautiful, My first thought is always you.",
+      imageUrl: "/1.jpeg",
       order: 1
     },
     {
       id: 2,
-      title: "Growing Closer",
-      content: "Every conversation, every shared laugh, every quiet moment together brought us closer. I found myself looking forward to seeing you, thinking about you constantly.",
-      imageUrl: "https://images.unsplash.com/photo-1501901609772-df0848060b33?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y291cGxlc3xlbnwwfHwwfHx8MA%3D%3D",
+      title: "Expression Of Me When Fall In Love..",
+      content: "I feels like I've fallen in love with your soul a thousand times before, and a thousand times before, and A million times more...",
+      imageUrl: "/diwakar1.jpg",
       order: 2
     },
     {
       id: 3,
-      title: "Falling Deeper",
-      content: "Somewhere along the way, friendship blossomed into something more. My heart would race at the sound of your voice, and your smile became my favorite sight.",
-      imageUrl: "https://images.unsplash.com/photo-1555689070-b25ef81cc3ea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNvdXBsZXN8ZW58MHx8MHx8fDA%3D",
+      title: "Your Art To Fall In Love...",
+      content: "You never looked nice, you looked like art, and art wasn't supposed to look nice; it was supposed to make me feel something....",
+      imageUrl: "/7.jpeg",
       order: 3
+    },
+    {
+      id: 4,
+      title: "Promise To You...",
+      content: "I will love you as long as the sun burns in the sky, as long as the moon shines its light into the dark night, until the raging blue oceans become calm and run dry. I will love you until the end of time !!!",
+      imageUrl: "/diwakar2.jpg",
+      order: 4
+    },
+    {
+      id: 5,
+      title: "Your Smile..",
+      content: "You have one of those rare smiles that feels like a day of warm sun in winter...",
+      imageUrl: "/8.jpeg",
+      order: 5
     },
   ];
 
@@ -247,7 +261,7 @@ export default function Story() {
 
       {/* Single optimized glow */}
       <motion.div
-        animate={{ 
+        animate={{
           scale: [1, 1.1, 1],
           opacity: [0.1, 0.15, 0.1],
         }}
@@ -307,7 +321,7 @@ export default function Story() {
               transition={{ duration: 3, repeat: Infinity }}
               className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-handwriting text-transparent bg-clip-text bg-gradient-to-r from-rose-600 via-pink-600 to-purple-600 leading-tight px-4"
             >
-              Our Journey
+              Reason To FALL IN LOVE
             </motion.h1>
 
             <motion.p

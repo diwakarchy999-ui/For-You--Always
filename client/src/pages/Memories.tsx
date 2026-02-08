@@ -4,6 +4,7 @@ import { Loader2, Heart, Sparkles, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { useEffect, memo } from "react";
+import ReactPlayer from 'react-player';
 
 // Memoized loading spinner
 const LoadingSpinner = memo(() => (
@@ -76,50 +77,100 @@ export default function Memories() {
   const displayMemories = (memories && memories.length > 0) ? memories : [
     {
       id: 1,
-      url: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
+      url: "/V2.mp4",
       type: "image",
-      caption: "The way you smile",
-      date: "Always",
+      caption: "Simplicity",
+
       rotation: -2
     },
     {
       id: 2,
-      url: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=800&q=80",
+      url: "/V3.mp4",
       type: "image",
-      caption: "Beautiful moments",
-      date: "Spring 2023",
+      caption: "The way you smile",
+
       rotation: 3
     },
     {
       id: 3,
-      url: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=800&q=80",
+      url: "/V4.mp4",
       type: "image",
-      caption: "Never letting go",
-      date: "Forever",
+      caption: "Good Dressing Sense",
+
       rotation: -4
     },
     {
       id: 4,
-      url: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=800&q=80",
-      type: "image",
-      caption: "Chasing sunsets",
-      date: "Summer Vacation",
+      url: "/V1.mp4",
+      type: "video",
+      caption: "Nature Of Careing ",
+
       rotation: 2
+
     },
     {
       id: 5,
-      url: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=800&q=80",
+      url: "/V5.mp4",
       type: "image",
-      caption: "Surprises",
-      date: "Your Birthday",
+      caption: "Good Acting",
+
       rotation: 5
     },
     {
       id: 6,
-      url: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
+      url: "/V6.mp4",
       type: "image",
-      caption: "Coffee dates",
-      date: "Every Weekend",
+      caption: "Foundation of Trust",
+
+      rotation: -3
+    },
+    {
+      id: 7,
+      url: "/V7.mp4",
+      type: "image",
+      caption: "Nature To Give Respect",
+
+      rotation: -2
+    },
+    {
+      id: 8,
+      url: "/V8.mp4",
+      type: "image",
+      caption: "Innocent",
+
+      rotation: 3
+    },
+    {
+      id: 9,
+      url: "/V9.mp4",
+      type: "image",
+      caption: "Inspiring",
+
+      rotation: -4
+    },
+    {
+      id: 10,
+      url: "/V13.mp4",
+      type: "video",
+      caption: "Insightful",
+
+      rotation: 2
+
+    },
+    {
+      id: 5,
+      url: "/V11.mp4",
+      type: "image",
+      caption: "Iconic",
+
+      rotation: 5
+    },
+    {
+      id: 11,
+      url: "/V12.mp4",
+      type: "image",
+      caption: "Interesting",
+
       rotation: -3
     }
   ];
@@ -128,10 +179,10 @@ export default function Memories() {
     <div className="min-h-screen bg-gradient-to-br from-rose-50 via-pink-50 to-purple-50 relative overflow-hidden">
       {/* Simplified background effects */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-pink-200/20 via-transparent to-transparent pointer-events-none" />
-      
+
       {/* Single optimized glow */}
       <motion.div
-        animate={{ 
+        animate={{
           scale: [1, 1.1, 1],
           opacity: [0.1, 0.18, 0.1],
         }}
@@ -198,7 +249,7 @@ export default function Memories() {
               transition={{ duration: 3, repeat: Infinity }}
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-handwriting text-transparent bg-clip-text bg-gradient-to-r from-rose-600 via-pink-600 to-purple-600 leading-tight px-4"
             >
-              Our Memory Lane
+              Your Hidden Habbits
             </motion.h1>
 
             <motion.p
@@ -207,7 +258,7 @@ export default function Memories() {
               transition={{ duration: 0.7, delay: 0.5 }}
               className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-serif italic max-w-2xl mx-auto px-4"
             >
-              Captured moments that tell our beautiful story
+              Even you don't know about your hidden good habits....
             </motion.p>
           </motion.div>
 
@@ -251,8 +302,8 @@ export default function Memories() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "100px", amount: 0.1 }}
-              transition={{ 
-                duration: 0.6, 
+              transition={{
+                duration: 0.6,
                 delay: index * 0.1,
                 ease: "easeOut"
               }}
