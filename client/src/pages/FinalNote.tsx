@@ -212,7 +212,7 @@ export default function FinalNote() {
 
               <p className="font-handwriting text-xl sm:text-2xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-rose-600 to-pink-600">
                 Forever Your
-                Diwakar ....
+                Koshis ....
               </p>
 
               <motion.div
@@ -224,7 +224,7 @@ export default function FinalNote() {
               >
                 <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-pink-400/60" />
                 <span className="font-serif text-xs sm:text-sm text-gray-500 italic">
-                  Purpose Day {new Date().getFullYear()}
+                  Promish Day {new Date().getFullYear()}
                 </span>
               </motion.div>
             </motion.div>
@@ -263,7 +263,7 @@ export default function FinalNote() {
             transition={{ duration: 2.5, repeat: Infinity }}
             className="font-handwriting text-base sm:text-lg md:text-xl text-pink-600"
           >
-            Happy Purpose Day ♡
+            Happy Promish Day ♡
           </motion.p>
 
           <p className="text-xs sm:text-sm text-gray-500 italic">

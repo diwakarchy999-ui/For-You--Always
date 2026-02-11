@@ -77,7 +77,7 @@ export default function Memories() {
   const displayMemories = (memories && memories.length > 0) ? memories : [
     {
       id: 1,
-      url: "/V2.mp4",
+      url: "/S4.jpg",
       type: "image",
       caption: "Simplicity",
 
@@ -85,7 +85,7 @@ export default function Memories() {
     },
     {
       id: 2,
-      url: "/V3.mp4",
+      url: "/S5.jpg",
       type: "image",
       caption: "The way you smile",
 
@@ -93,7 +93,7 @@ export default function Memories() {
     },
     {
       id: 3,
-      url: "/V4.mp4",
+      url: "/S6.jpg",
       type: "image",
       caption: "Good Dressing Sense",
 
@@ -101,7 +101,7 @@ export default function Memories() {
     },
     {
       id: 4,
-      url: "/V1.mp4",
+      url: "/S7.jpg",
       type: "video",
       caption: "Nature Of Careing ",
 
@@ -110,7 +110,7 @@ export default function Memories() {
     },
     {
       id: 5,
-      url: "/V5.mp4",
+      url: "/S8.jpg",
       type: "image",
       caption: "Good Acting",
 
@@ -118,7 +118,7 @@ export default function Memories() {
     },
     {
       id: 6,
-      url: "/V6.mp4",
+      url: "/S9.jpg",
       type: "image",
       caption: "Foundation of Trust",
 
@@ -126,7 +126,7 @@ export default function Memories() {
     },
     {
       id: 7,
-      url: "/V7.mp4",
+      url: "/S10.jpg",
       type: "image",
       caption: "Nature To Give Respect",
 
@@ -134,45 +134,13 @@ export default function Memories() {
     },
     {
       id: 8,
-      url: "/V8.mp4",
+      url: "/S11.jpg",
       type: "image",
       caption: "Innocent",
 
       rotation: 3
     },
-    {
-      id: 9,
-      url: "/V9.mp4",
-      type: "image",
-      caption: "Inspiring",
-
-      rotation: -4
-    },
-    {
-      id: 10,
-      url: "/V13.mp4",
-      type: "video",
-      caption: "Insightful",
-
-      rotation: 2
-
-    },
-    {
-      id: 5,
-      url: "/V11.mp4",
-      type: "image",
-      caption: "Iconic",
-
-      rotation: 5
-    },
-    {
-      id: 11,
-      url: "/V12.mp4",
-      type: "image",
-      caption: "Interesting",
-
-      rotation: -3
-    }
+   
   ];
 
   return (

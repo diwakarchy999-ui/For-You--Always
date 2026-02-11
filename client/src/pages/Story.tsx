@@ -221,36 +221,24 @@ export default function Story() {
       id: 1,
       title: "Your Simplisity..",
       content: "When I think something beautiful, My first thought is always you.",
-      imageUrl: "/1.jpeg",
+      imageUrl: "/S1.jpg",
       order: 1
     },
+  
     {
       id: 2,
-      title: "Expression Of Me When Fall In Love..",
-      content: "I feels like I've fallen in love with your soul a thousand times before, and a thousand times before, and A million times more...",
-      imageUrl: "/diwakar1.jpg",
-      order: 2
-    },
-    {
-      id: 3,
       title: "Your Art To Fall In Love...",
       content: "You never looked nice, you looked like art, and art wasn't supposed to look nice; it was supposed to make me feel something....",
-      imageUrl: "/7.jpeg",
-      order: 3
+      imageUrl: "/S2.jpg",
+      order: 2
     },
+    
     {
-      id: 4,
-      title: "Promise To You...",
-      content: "I will love you as long as the sun burns in the sky, as long as the moon shines its light into the dark night, until the raging blue oceans become calm and run dry. I will love you until the end of time !!!",
-      imageUrl: "/diwakar2.jpg",
-      order: 4
-    },
-    {
-      id: 5,
+      id: 3,
       title: "Your Smile..",
       content: "You have one of those rare smiles that feels like a day of warm sun in winter...",
-      imageUrl: "/8.jpeg",
-      order: 5
+      imageUrl: "/S3.jpg",
+      order: 3
     },
   ];
 
@@ -321,7 +309,7 @@ export default function Story() {
               transition={{ duration: 3, repeat: Infinity }}
               className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-handwriting text-transparent bg-clip-text bg-gradient-to-r from-rose-600 via-pink-600 to-purple-600 leading-tight px-4"
             >
-              Reason To FALL IN LOVE
+              Reason To Of Beautiness
             </motion.h1>
 
             <motion.p
@@ -422,7 +410,7 @@ export default function Story() {
                 />
 
                 <span className="relative flex items-center gap-2 sm:gap-3">
-                  See Our Memories
+                  Your Best Memory
                   <motion.div
                     animate={{ x: [0, 4, 0] }}
                     transition={{ duration: 1.5, repeat: Infinity }}
